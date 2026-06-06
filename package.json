@@ -1,0 +1,15 @@
+{
+  "name": "rag-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "*",
+    "@qdrant/js-client-rest": "*",
+    "dotenv": "*",
+    "express": "*",
+    "groq-sdk": "^1.2.1"
+  }
+}
