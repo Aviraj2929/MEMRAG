@@ -8,8 +8,11 @@
   "dependencies": {
     "@google/generative-ai": "*",
     "@qdrant/js-client-rest": "*",
+    "@slack/bolt": "^4.7.3",
+    "cors": "^2.8.6",
     "dotenv": "*",
     "express": "*",
-    "groq-sdk": "^1.2.1"
+    "groq-sdk": "^1.2.1",
+    "redis": "^6.0.0"
   }
 }
