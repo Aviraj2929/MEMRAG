@@ -121,8 +121,9 @@ app.get('/stats', async (req, res) => {
 // ── Start ─────────────────────────────────────────────────────
 async function start() {
   await setupCollection()
-  app.listen(3000, () => {
-    console.log('\n🚀 MemRAG running at http://localhost:3000')
+ const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
+  console.log(`🚀 MemRAG running on port ${PORT}`)
     console.log('  POST /index     → add documents')
     console.log('  POST /ask       → ask (3 memory layers active)')
     console.log('  POST /feedback  → 👍 👎 teaches the system')
